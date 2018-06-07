@@ -1,0 +1,12 @@
+/* --------------------------
+ *  Footer
+ * -------------------------- */
+.global-footer {
+  background-color: $black;
+  color: #gray-3;
+  padding: ($pulse * 3) 0 ($pulse * 3);
+}
+
+.global-footer a {
+  color: inherit;
+}

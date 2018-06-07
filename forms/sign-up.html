@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign-up form template</title>
+  </head>
+  <body>
+    <section class="envelope">
+      <header class="text--center">
+        <h1 class="gamma">Sign up</h1>
+        <p>Already a member? <a href="sign-in.html">Log in</a></p>
+      </header>
+      <main>
+        <form action="sign-up" method="post">
+          <div class="alert">
+            List validation messages here.
+          </div>
+          
+          <div class="input-group">
+            <label for="full-name" class="input-group__label">full name</label>
+            <input id="full-name" class="input-group__field" type="text" name="full-name" placeholder="e.g. Diana Prince" />
+          </div>
+          
+          <div class="input-group">
+            <label for="email" class="input-group__label">Email address</label>
+            <input id="email" class="input-group__field" type="email" name="email" placeholder="e.g. michael@gmx.ch" />
+          </div>
+          
+          <div class="input-group">
+            <label for="password" class="input-group__label">Choose a password</label>
+            <input id="password" class="input-group__field" type="password" name="password" />
+          </div>
+          
+          <div class="input-group">
+            <label for="repeat-password" class="input-group__label">Retype password</label>
+            <input id="repeat-password" class="input-group__field" type="password" name="password" />
+          </div>
+          
+          <div>
+            <input id="tos" type="checkbox" />
+            <label for="tos">By signing up I agree to My Bucket List's <a href="tos.html">Terms of Service</a>.</label>
+          </div>
+          
+          <div class="prompt">
+            <button class="btn btn--primary prompt__confirm" type="submit">Sign Up</button>
+          </div>
+          
+        </form>
+      </main>
+    </section>
+  </body>

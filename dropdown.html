@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Bucket List</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  
+  <body>
+    <header class="banner">
+      <div class="global-header">
+        <div class="content-wrapper">
+          <div class="logo">
+            <a href="/"><span><em>My</em> Bucket List</span></a>
+          </div>
+          <form class="search" action="ideas" method="get">
+            <label for="global-search-input">Search</label>
+            <input id="global-search-input" name="search" type="text" placeholder="Swimming with dolphins" />
+              <button type="submit">Search</button>
+          </form>
+          <nav>
+            <ul class="global-nav">
+              <li><a href="#">My Goals</a></li>
+              <li><a href="#">Following</a></li>
+              <li><a href="inspiration.html">Inspiration</a></li>
+              <li class="has-dropdown">
+                <a href="#"><img src="assets/images/avatar.png" alt="avatar" /></a>
+                <ul class="dropdown">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Account settings</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="masthead">
+        <div class="content-wrapper">
+          <h1>Get inspired. Create your bucket list. Share.</h1>
+          <form class="search" action="ideas" method="get">
+            <label for="cta-search-input">Inspire me</label>
+            <input id="cta-search-input" name="search" type="text" placeholder="e.g. driving a racecar" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+  <main>
+    <div class="content-wrapper">
+      <h2>Some possible goals</h2>
+      <ul class="bare-list">
+        <li class="card">
+          <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+            <img src="assets/images/northern-lights-small.jpg" width="255" height="170" alt="Northern lights above a house at night" srcset="assets/images/northern-lights-small.jpg" 300w, "assets/images/northern-lights-large.jpg" 600w/>
+            <div class="card__intro">
+              <h3 class="card__title">See the northern lights.</h3>
+              <span>1254 people are doing this</span>
+            </div>
+          </a>
+          <form class="card__footer" action="idea" method="post">
+            <button type="submit" name="action" value="like">Like</button>
+            <button type="submit" name="action" value="addGoal">Add goal</button>
+          </form>
+        </li>
+        <li class="card">
+          <a class="card__thumb" href="ideas/swim-with-dolphins.html">
+            <img src="assets/images/dolphins-small.jpg" width="255" height="170" alt="3 dolphins swimming under water" />
+            <div class="card__intro">
+              <h3 class="card__title">Swim with dolphins.</h3>
+              <span>1254 people are doing this</span>
+            </div>
+          </a>
+          <form action="idea" method="post">
+            <button type="submit" name="action" value="like">Like</button>
+            <button type="submit" name="action" value="addGoal">Add goal</button>
+          </form>
+        </li>
+        <li class="card">
+          <a class="card__thumb" href="ideas/swim-with-dolphins.html">
+            <img src="assets/images/dancing-small.jpg" width="255" height="170" alt="3 dolphins swimming under water" />
+            <div class="card__intro">
+              <h3 class="card__title">Swim with dolphins.</h3>
+              <span>1254 people are doing this</span>
+            </div>
+          </a>
+          <form action="idea" method="post">
+            <button type="submit" name="action" value="like">Like</button>
+            <button type="submit" name="action" value="addGoal">Add goal</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </main>
+  
+  <!-- Start
+  footer section -->
+  <footer class="global-footer">
+    <div class="content-wrapper">
+      <ul>
+       <li class="logo"><a href="/"><span><em>My</em> Bucket List</span></a></li>
+       <li><a href="My Bucket List">About</a></li>
+       <li><a href="My Bucket List">Guide</a></li>
+       <li><a href="My Bucket List">Terms of Use</a></li>
+      </ul>
+      <p>&copy; EPFL 2017</p>
+    </div>
+  </footer>
+</html>
